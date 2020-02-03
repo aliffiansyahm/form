@@ -30,7 +30,7 @@ class SuperAdmin extends CI_Controller{
 
         if($this->form_validation->run() == false){
             //$this->load->view('superAdmin/template/header', $data);
-            $this->load->view('superAdmin/login', $data);
+            $this->load->view('SuperAdmin/login', $data);
             //$this->load->view('superAdmin/template/footer', $data);
         }
         else {
