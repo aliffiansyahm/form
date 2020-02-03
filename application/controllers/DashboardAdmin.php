@@ -20,9 +20,9 @@ class DashboardAdmin extends CI_Controller{
     {
         $data['title'] = "Dashboard";
 
-        $this->load->view('superAdmin/template/header', $data);
-        $this->load->view('superAdmin/dashboard', $data);
-        $this->load->view('superAdmin/template/footer', $data);
+        $this->load->view('SuperAdmin/template/header', $data);
+        $this->load->view('SuperAdmin/dashboard', $data);
+        $this->load->view('SuperAdmin/template/footer', $data);
     }
 
 }
