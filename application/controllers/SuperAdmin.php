@@ -13,7 +13,7 @@ class SuperAdmin extends CI_Controller{
 
     private function logged_in()
     {
-        if( ! $this->session->userdata('authenticated')){
+        if( ! $this->session->userdata('authenticatedSuper')){
             $this->login();
             //echo "belum login";
         }
@@ -43,7 +43,7 @@ class SuperAdmin extends CI_Controller{
                 $userdata = array(
                     'id' => $user->ID_SUPER_ADMIN,
                     'username' => $user->USERNAME,
-                    'authenticated' => TRUE
+                    'authenticatedSuper' => TRUE
                 );
 
                 $this->session->set_userdata($userdata);

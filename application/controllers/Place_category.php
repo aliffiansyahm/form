@@ -13,7 +13,7 @@ class Place_category extends CI_Controller{
     }
 
     private function logged_in() {
-        if(! $this->session->userdata('authenticated')) {
+        if(! $this->session->userdata('authenticatedSuper')) {
             redirect(site_url('SuperAdmin/login'));
         }
     }
